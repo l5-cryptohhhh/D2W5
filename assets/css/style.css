@@ -462,7 +462,7 @@ footer i {
 /* ── Box di conferma ─────────────────────────────────────── */
 #conferma-box {
     background-color: #e8f5e9;
-    border: 1px solid #a5d6a7;
+    border-left: 4px solid #2e7d32;
     border-radius: 8px;
     padding: 24px;
     margin-top: 20px;
