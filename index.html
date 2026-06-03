@@ -1,184 +1,245 @@
 <!DOCTYPE html>
 <html lang="it">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manuel Nunziata — Portfolio</title>
+    <title>Portfolio — Manuel Nunziata</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css">
-  </head>
-  <body>
+</head>
 
-    <header id="site-header">
-      <h1>Mario Rossi</h1>
-      <p class="tagline"><strong>Studente Full Stack</strong> — corso Epicode 2026</p>
-      <nav>
-        <ul>
-          <li><a href="#chi-sono">Chi sono</a></li>
-          <li><a href="#competenze">Competenze</a></li>
-          <li><a href="#esperienze">Esperienze</a></li>
-          <li><a href="#progetti">Progetti</a></li>
-          <li><a href="#contatti">Contatti</a></li>
-        </ul>
-      </nav>
+<body>
+    <header>
+        <h1>Manuel Nunziata</h1>
+        <h3>Studente Full-Stack — corso Epicode 2026</h3>
+        <nav>
+            <ul>
+                <li><a href="#chi-sono"><span class="material-symbols-outlined">boy</span>Chi sono</a></li>
+                <li><a href="#competenze"><span class="material-symbols-outlined">swap_driving_apps_wheel</span>Competenze</a></li>
+                <li><a href="#esperienze"><span class="material-symbols-outlined">card_travel</span>Esperienze</a></li>
+                <li><a href="#progetti"><span class="material-symbols-outlined">folder_open</span>Progetti</a></li>
+                <li><a href="#contatti"><span class="material-symbols-outlined">mail</span>Contatti</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
+        <section>
+            <h2 id="chi-sono"><span class="material-symbols-outlined">arrow_forward_ios</span>Chi sono</h2>
+            <figure class="image">
+                <img src="assets/img/profile.jpg" alt="Manuel Nunziata" width="200" height="200">
+                <figcaption>Manuel Nunziata</figcaption>
+            </figure>
+            <p class="capolettera">
+                Mi chiamo Manuel Nunziata e ho appena iniziato a programmare. Studio sviluppo web con <b>Epicode</b> e
+                ogni giorno aggiungo qualcosa di nuovo su questa pagina. Mi piace lavorare in gruppo e leggere
+                documentazione tecnica, capendo come funzionano le cose.
+            </p>
+            <p>Vivo a Latina. Ho una formazione in marketing e sto approdando ora in questo mondo.</p>
+        </section>
 
-      <section id="chi-sono">
-        <h2>Chi sono</h2>
-        <img class="avatar" src="assets/img/profile.jpg" alt="Foto profilo di Manuel Nunziata">
-        <p>Mi chiamo Manuel Nunziata e sto imparando a programmare. Studio sviluppo web con <strong>Epicode</strong> e ogni giorno aggiungo qualcosa a questa pagina.</p>
-        <p>Vivo a Latina. Ho una formazione precedente in <em>lettere</em> e ora sto cambiando settore. Cerco un primo ruolo come sviluppatore frontend.</p>
-      </section>
+        <section>
+            <h2 id="competenze"><span class="material-symbols-outlined">arrow_forward_ios</span>Competenze</h2>
+            <table class="comp">
+                <caption>Le tecnologie su cui mi sento più al sicuro al termine della settimana di corso. Le percentuali
+                    sono autovalutazioni.</caption>
+                <thead>
+                    <tr>
+                        <th>Tecnologia</th>
+                        <th>Livello</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <h4><span class="material-symbols-outlined">html</span>&nbsp;HTML5 semantico</h4>
+                            <p>Tag strutturali, attributi, accessibilità di base, form con validazione.</p>
+                        </td>
+                        <td>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 85%;"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4><span class="material-symbols-outlined">css</span>&nbsp;CSS3</h4>
+                            <p>Selettori, pseudo-classi, box model, float, pseudo-elementi.</p>
+                        </td>
+                        <td>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 50%;"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4><span class="material-symbols-outlined">gitlab</span>&nbsp;Git e GitHub</h4>
+                            <p>Comandi base, commit, branch, push/pull e gestione dei repository su GitHub.</p>
+                        </td>
+                        <td>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 85%;"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4><span class="material-symbols-outlined">code_xml</span>&nbsp;Visual Studio Code — editor di lavoro</h4>
+                            <p>Estensioni, shortcuts, Emmet e integrazione con Git.</p>
+                        </td>
+                        <td>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 90%;"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4><span class="material-symbols-outlined">edit_document</span>&nbsp;Markdown e documentazione</h4>
+                            <p>Sintassi base, scrittura di README e documentazione tecnica.</p>
+                        </td>
+                        <td>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 80%;"></div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-      <section id="competenze">
-        <h2>Competenze</h2>
-        <p>Le tecnologie che vedo durante le prime settimane di corso.</p>
-        <ul class="skill-list">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Git e GitHub</li>
-          <li>Visual Studio Code</li>
-        </ul>
-      </section>
+        <section>
+            <h2 id="esperienze"><span class="material-symbols-outlined">arrow_forward_ios</span>Esperienze</h2>
+            <table class="experience">
+                <caption>Elenco esperienze lavorative e formative</caption>
+                <thead>
+                    <tr>
+                        <th>Anno</th>
+                        <th>Ruolo</th>
+                        <th>Azienda / Scuola</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2025</td>
+                        <td>Corriere</td>
+                        <td>Amazon</td>
+                    </tr>
+                    <tr>
+                        <td>2024</td>
+                        <td>Commerciante</td>
+                        <td>Phoenix</td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>Diploma in Marketing</td>
+                        <td>Centro Studi Atena</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-      <section id="esperienze">
-        <h2>Esperienze</h2>
-        <p>Un riepilogo del mio percorso formativo e lavorativo recente.</p>
-        <table>
-          <caption>Esperienze formative e lavorative</caption>
-          <thead>
-            <tr>
-              <th scope="col">Anno</th>
-              <th scope="col">Ruolo</th>
-              <th scope="col">Azienda / Scuola</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>2026</td>
-              <td>Studente Full Stack</td>
-              <td>Epicode</td>
-            </tr>
-            <tr>
-              <td>2024 - 2025</td>
-              <td>Libraio</td>
-              <td>Libreria Centrale, Milano</td>
-            </tr>
-            <tr>
-              <td>2018 - 2022</td>
-              <td>Studente di Lettere</td>
-              <td>Università degli Studi di Milano</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+        <section class="other">
+            <h2 id="progetti"><span class="material-symbols-outlined">arrow_forward_ios</span>Progetti</h2>
+            <p>I lavori realizzati durante queste settimane di corso.</p>
+            <a href="progetti.html">Vai a Progetti</a>
+            <div id="project">
+                <h3>Pagina Ricetta</h3>
+                <p>Una pagina con titolo, ingredienti e procedura. Esercizio di markup semantico applicato a un
+                    contenuto reale.</p>
+                <a href="https://github.com/l5-cryptohhhh/index.html/blob/main/index.html2.html">
+                    <i class="bi bi-github"></i>&nbsp;Vedi su GitHub
+                </a>
+            </div>
+            <div id="card">
+                <h3>Card di Presentazione</h3>
+                <p>Un biglietto digitale con nome, cognome, link ai social e ruolo. Esercizio di sintesi sulla
+                    struttura HTML.</p>
+                <a href="https://github.com/l5-cryptohhhh/index.html/blob/main/index.html2.html">
+                    <i class="bi bi-github"></i>&nbsp;Vedi su GitHub
+                </a>
+            </div>
+            <div id="portfolio">
+                <h3>Portfolio</h3>
+                <p>Questa pagina: un portfolio personale costruito a mano durante la prima settimana di corso, con
+                    sezioni per competenze, esperienze, progetti e un form di contatto.</p>
+                <a href="https://github.com/l5-cryptohhhh/index.html/blob/main/index.html2.html">
+                    <i class="bi bi-github"></i>&nbsp;Vedi su GitHub
+                </a>
+            </div>
+        </section>
 
-      <section id="progetti">
-        <h2>Progetti</h2>
-        <p>I lavori fatti durante le prime settimane di corso.</p>
+        <section>
+            <h2 id="contatti"><span class="material-symbols-outlined">arrow_forward_ios</span>Contatti</h2>
+            <p>Vuoi metterti in contatto?<br>Compila il form — rispondo entro 24 ore.</p>
+            <button id="open-modal-btn" type="button">
+                <span class="material-symbols-outlined">mail</span>Scrivimi
+            </button>
 
-        <article class="project">
-          <h3>Pagina ricetta</h3>
-          <p>Una pagina con titolo, ingredienti e procedura. Esercizio di markup semantico applicato a un contenuto reale.</p>
-          <p><a href="https://github.com/mariorossi/ricetta" target="_blank">Vedi su GitHub</a></p>
-        </article>
-
-        <article class="project">
-          <h3>Card di presentazione</h3>
-          <p>Un biglietto digitale con nome, ruolo e link ai social.</p>
-          <p><a href="https://github.com/mariorossi/card" target="_blank">Vedi su GitHub</a></p>
-        </article>
-      </section>
-
-      <!-- ===== SEZIONE CONTATTI ===== -->
-      <section id="contatti">
-        <h2>Contatti</h2>
-        <p>Clicca il pulsante per scrivermi. Ti rispondo entro 24 ore.</p>
-
-        <button type="button" id="open-modal-btn" class="contact-toggle-btn">
-          Contattami!
-        </button>
-
-        <!-- DIV di conferma: visibile solo dopo il salvataggio -->
-        <div id="conferma-box" class="conferma-box" hidden>
-          <h3>✅ Messaggio ricevuto!</h3>
-          <dl>
-            <dt>Nome</dt>        <dd id="conf-nome"></dd>
-            <dt>Email</dt>       <dd id="conf-email"></dd>
-            <dt>Motivo</dt>      <dd id="conf-motivo"></dd>
-            <dt>Data risposta</dt><dd id="conf-data"></dd>
-            <dt>Messaggio</dt>   <dd id="conf-messaggio"></dd>
-          </dl>
-          <button type="button" id="chiudi-conferma-btn" class="btn-chiudi-conferma">
-            Chiudi
-          </button>
-        </div>
-      </section>
-
+            <div id="conferma-box" hidden>
+                <h3><i class="bi bi-check-circle-fill"></i>&nbsp;Messaggio ricevuto!</h3>
+                <p>Grazie per avermi scritto. Risponderò entro 24 ore.</p>
+                <ul>
+                    <li><strong>Nome:</strong> <span id="conf-nome"></span></li>
+                    <li><strong>Email:</strong> <span id="conf-email"></span></li>
+                    <li><strong>Motivo:</strong> <span id="conf-motivo"></span></li>
+                    <li><strong>Data:</strong> <span id="conf-data"></span></li>
+                    <li><strong>Messaggio:</strong> <span id="conf-messaggio"></span></li>
+                </ul>
+                <button id="chiudi-conferma-btn" type="button">Chiudi</button>
+            </div>
+        </section>
     </main>
 
-    <!-- ===== MODALE ===== -->
     <div id="contact-modal" class="modal-overlay" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-      <div class="modal-box">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h3 id="modal-title">Contattami</h3>
+                <button id="close-modal-btn" type="button" aria-label="Chiudi modale">✕</button>
+            </div>
+            <form id="contact-form" novalidate>
+                <label for="nome">Nome completo *</label>
+                <input type="text" id="nome" name="nome" placeholder="Il tuo nome completo" required>
 
-        <button type="button" class="modal-close" id="close-modal-btn" aria-label="Chiudi">&times;</button>
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="La tua email" required>
 
-        <h3 id="modal-title">Scrivimi</h3>
-        <p>Compila il form e clicca <strong>Conferma</strong> per salvare i dati.</p>
+                <label for="motivo">Motivo del contatto</label>
+                <select id="motivo" name="motivo">
+                    <option value="Proposta di lavoro">Proposta di lavoro</option>
+                    <option value="Richiesta informazioni">Richiesta informazioni</option>
+                    <option value="Altro">Altro</option>
+                </select>
 
-        <form id="contact-form" novalidate>
+                <label for="data">Data di nascita</label>
+                <input type="date" id="data" name="data">
 
-          <p>
-            <label for="nome">Nome</label><br>
-            <input type="text" id="nome" name="nome" placeholder="Il tuo nome" required>
-          </p>
+                <label for="messaggio">Messaggio</label>
+                <textarea id="messaggio" name="messaggio" rows="4" placeholder="Scrivi il tuo messaggio..."></textarea>
 
-          <p>
-            <label for="email">Email</label><br>
-            <input type="email" id="email" name="email" placeholder="tu@esempio.it" required>
-          </p>
-
-          <p>
-            <label for="motivo">Motivo del contatto</label><br>
-            <select id="motivo" name="motivo">
-              <option value="Proposta di lavoro">Proposta di lavoro</option>
-              <option value="Collaborazione">Collaborazione su un progetto</option>
-              <option value="Informazioni">Richiesta di informazioni</option>
-              <option value="Altro">Altro</option>
-            </select>
-          </p>
-
-          <p>
-            <label for="data">Data preferita per la risposta</label><br>
-            <input type="date" id="data" name="data">
-          </p>
-
-          <p>
-            <label for="messaggio">Messaggio</label><br>
-            <textarea id="messaggio" name="messaggio" rows="5" placeholder="Scrivi qui il tuo messaggio..." required></textarea>
-          </p>
-
-          <p>
-            <input type="checkbox" id="consenso" name="consenso" required>
-            <label for="consenso">Accetto di essere ricontattato all'indirizzo indicato</label>
-          </p>
-
-          <!-- Pulsanti azione -->
-          <div class="modal-actions">
-            <button type="button" id="annulla-btn" class="btn-annulla">Annulla</button>
-            <button type="submit" id="conferma-btn" class="btn-conferma">Conferma</button>
-          </div>
-
-        </form>
-      </div>
+                <div class="modal-actions">
+                    <button type="button" id="annulla-btn">Annulla</button>
+                    <button type="submit">
+                        <span class="material-symbols-outlined">send</span>Invia
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
 
-    <footer id="site-footer">
-      <p>© 2026 Manuel Nunziata</p>
+    <footer>
+        <span class="footer-icons">
+            <a href="https://www.linkedin.com/in/manuel-nunziata-800494372/" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="Sito web"><i class="bi bi-globe"></i></a>
+            <a href="mailto:nunziatamanuel5@gmail.com" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+        </span>
+        <p>&copy; 2026 Manuel Nunziata — Portfolio</p>
     </footer>
+    <script src="assets/js/script.js" defer></script>
+</body>
 
-    <script src="assets/js/script.js"></script>
-
-  </body>
 </html>
