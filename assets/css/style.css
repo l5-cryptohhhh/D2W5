@@ -14,10 +14,14 @@ body {
     font-size: 1.1rem;
 }
 
-header {
-    background-image: url('https://images.pexels.com/photos/12024196/pexels-photo-12024196.jpeg?_gl=1*1nq70l2*_ga*MTAzNTI1Njk5Ni4xNzc4MDYwNzI0*_ga_8JE65Q40S6*czE3NzgwNzE0MzIkbzIkZzEkdDE3NzgwNzE0NjEkajMxJGwwJGgw');
+body {
+    background-image: url('https://images.pexels.com/photos/12024196/pexels-photo-12024196.jpeg?_gl=1*1nq70l2*_ga*MTAzNTI1Njk5Ni4xNzgwNjA3MjQ*_ga_8JE65Q40S6*czE3NzgwNzE0MzIkbzIkZzEkdDE3NzgwNzE0NjEkajMxJGwwJGgw');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+}
+
+header {
     width: 100%;
     text-align: center;
     height: 400px;
@@ -87,6 +91,7 @@ main section {
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    background-color: rgba(255, 255, 255, 0.92);
 }
 
 .bio-content {
